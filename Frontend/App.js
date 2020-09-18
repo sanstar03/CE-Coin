@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, View, SafeAreaView, Text, Alert } from "react-native";
-import { Input, Button } from "react-native-elements";
+import { Input, Button,Image } from "react-native-elements";
 import { Header } from "react-native-elements";
 import { render } from "react-dom";
 
@@ -86,3 +86,12 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
   },
 });
+      <Image
+        source={require('./bank.jpg')}
+        style={{ width: 40, height: 40 }}
+      />
+    </View>
+  );
+}
+
+
