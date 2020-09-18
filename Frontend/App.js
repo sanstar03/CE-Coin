@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, View, SafeAreaView, Text, Alert } from "react-native";
-import { Input, Button } from "react-native-elements";
+import { Input, Button,Image } from "react-native-elements";
 import { Header } from "react-native-elements";
 
 
@@ -60,15 +60,12 @@ export default function App() {
           />
         </View>
       </View>
+      <Image
+        source={require('./bank.jpg')}
+        style={{ width: 40, height: 40 }}
+      />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 4,
-    backgroundColor: "#ccc",
-    //alignItems: 'center',
-    //justifyContent: 'center',
-  },
-});
+
